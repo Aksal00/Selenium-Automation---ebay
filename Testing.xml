@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Website Automation Suite" parallel="tests" thread-count="2">
+    <test name="Chrome Test">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="url" value="https://www.ebay.com/" />
+        <parameter name="product" value="Mobile Phone" />
+        <parameter name="category" value="Cell Phones &amp; Accessories" />
+        <parameter name="no_of_checking_results" value="5" />
+        <parameter name="color" value="Black" />
+        <parameter name="quantity" value="1" />
+
+        <classes>
+            <class name="WebDriverManager"/>
+            <class name="Navigation_and_Verification"/>
+            <class name="Home_Page"/>
+            <class name="Product_Page"/>
+            <class name="Shopping_Cart"/>
+            <class name="Checkout_Page"/>
+            <!-- Add more test classes as needed -->
+        </classes>
+    </test>
+    <test name="Edge Test">
+        <parameter name="browser" value="Edge" />
+        <parameter name="url" value="https://www.ebay.com/" />
+        <parameter name="product" value="Mobile Phone" />
+        <parameter name="category" value="Cell Phones &amp; Accessories" />
+        <parameter name="no_of_checking_results" value="5" />
+        <parameter name="color" value="Black" />
+        <parameter name="quantity" value="1" />
+
+        <classes>
+            <class name="WebDriverManager"/>
+            <class name="Navigation_and_Verification"/>
+            <class name="Home_Page"/>
+            <class name="Product_Page"/>
+            <class name="Shopping_Cart"/>
+            <class name="Checkout_Page"/>
+            <!-- Add more test classes as needed -->
+        </classes>
+    </test>
+
+
+
+</suite>
